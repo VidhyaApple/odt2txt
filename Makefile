@@ -78,7 +78,7 @@ ifneq ($(MINGW32),)
 	LIBS = $(REGEX_DIR)/regex.o
 	ifdef STATIC
 		LIBS += $(wildcard $(ICONV_DIR)/lib/.libs/*.o)
-		LIBS += $(ZLIB_DIR)/zlib.a
+		LIBS += $(ZLIB_DIR)/libz.a
 	else
 		LIBS += -liconv
 	endif
